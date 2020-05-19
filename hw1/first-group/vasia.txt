@@ -1,2 +1,0 @@
-name: Vasia;
-age: 23;

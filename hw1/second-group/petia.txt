@@ -1,2 +1,0 @@
-name: Petia;
-age: 26;
