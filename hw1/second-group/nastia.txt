@@ -1,0 +1,2 @@
+name: Nastia;
+age: 25;

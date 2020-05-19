@@ -1,0 +1,2 @@
+name: Masha;
+age: 24;
