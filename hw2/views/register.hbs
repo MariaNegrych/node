@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    a {
+        cursor: pointer;
+        padding: 10px 20px;
+        color: white;
+        background-color: darkgreen;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    .form {
+        text-align: center;
+    }
+    .error {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+
+<div class="form">
+    <form action="/register" method="post">
+        <label>username:</label>
+        <input type="text" name="username">
+        <label>password:</label>
+        <input type="text" name="password">
+        <input type="submit" value="Send">
+    </form>
+    {{#if message}}
+        <span class="error">{{message}}</span>
+        <p><a href="/">log in</a></p>
+    {{/if}}
+</div>
+
+
+</body>
+</html>
