@@ -8,53 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-
-<style>
-    a {
-        cursor: pointer;
-        padding: 10px 20px;
-        color: white;
-        background-color: darkgreen;
-        text-decoration: none;
-        margin: 10px;
-    }
-
-    .main {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 50px;
-        justify-content: center;
-    }
-    .form {
-        text-align: center;
-    }
-    .mess {
-        margin: 20px;
-    }
-    .error {
-        color: red;
-        font-weight: bold;
-    }
-</style>
-
-<div class="main">
-    <div class="link"><a href="/register">Registration</a></div>
-    <div><a href="/users">Users list</a></div>
-</div>
-<div class="form">
-    <form action="/" method="post">
-        <label>username:</label>
-        <input type="text" name="username">
-        <label>password:</label>
-        <input type="text" name="password">
-        <input type="submit" value="Send">
-    </form>
-
-    {{#if message}}
-        <div class="error">{{message}}</div>
-
-        <div class="mess"><a href="/register">Do you want to register?</a></div>
-    {{/if}}
-</div>
+    <div>Hello {{username}}</div>
 </body>
 </html>

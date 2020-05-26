@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,30 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-<style>
-    a {
-        cursor: pointer;
-        padding: 10px 20px;
-        color: white;
-        background-color: darkgreen;
-        text-decoration: none;
-        margin: 10px;
-    }
-    .main {
-        margin: 20px;
-    }
 
-</style>
 
-<div class="main"><a href="/">Go to main page</a></div>
-<div>
-    {{#each users}}
-        <ul>
-            <li>
-                username: {{this.username}}. password: {{this.password}};
-            </li>
-        </ul>
-    {{/each}}
-</div>
+{{#each users}}
+    <li>
+        Name: {{this.name}}. Age: {{this.age}}. Email: {{this.email}}
+    </li>
+{{/each}}
+
+
 </body>
 </html>
